@@ -14,7 +14,7 @@ jobs:
 
       - name: Check for restricted string
         run: |
-          if grep -q "vivek-nikita" ${GITHUB_WORKSPACE}/*; then
+          if grep -q "restricted-string" ${GITHUB_WORKSPACE}/*; then
             echo "Error: Restricted string found"
             exit 1
           fi
